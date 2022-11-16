@@ -7,11 +7,17 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
-
+    
 }
 
 body{    overflow-x: hidden;
+    
 }
+
+button {
+    border-radius: 10px;
+}
+
 
 header{
     display: flex;
@@ -45,6 +51,7 @@ header{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: black;
+    border-radius: 10px;
 }
 
 .lista-menu ul li:hover{
@@ -67,54 +74,66 @@ header{
  font-size: 60px;
 }
 .content-2{
-    height: 120vh;
+    height: 250vh;
     width: 100vw;
     background: rgb(44, 44, 43);
    display: flex;
    flex-direction: column;
-   justify-content: flex-end;
+   justify-content: flex-start;
    align-items: center;
    padding: 40px 40px;
     
 }
 .jobs{
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     display: grid;
     align-items: center;
     gap: 30px;
+    margin-bottom: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    padding: 80px;
+    border-radius: 30px;
     
 }
+
+
 .content-2-geral{
     height: 80%;
     width: 90vw;
     
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column  ;
     
 }
+.projeto-js, .projeto-android{
+    color: white;
+    margin-bottom: 1%;
+}
+
 .content-1{
     width: 100vw;
     height: 120vh;
 align-items: center;
     display: flex;
     justify-content: center;
-  
+
     background: rgba(0, 0, 0, 0.726);
-    border-bottom: 2px solid rgb(255, 33, 107) ;
+    border-bottom: 1px solid rgb(255, 33, 107) ;
 }
 .logo{
     width: 600px;
     height: 700px;
+    padding-top: 15%;
 }
 
 
 
 .portifolio{
-    margin-bottom: 4%;
-    margin-top: 10%;
+   
+    margin-top: 1%;
     font-size: 40px;
     text-shadow: 0 0 10px white, 0 0 10px black, 0 0 10px black;
     font-family: 'Kanit', sans-serif;
@@ -160,12 +179,43 @@ footer{
     transition: .6s;
     cursor: pointer;
 }
-.content-3{
-    height: 100vh;
-    width: 100vw;
-    background: rgb(44, 44, 43);
+#JavaScript{
+    height: 320px;
+}
+#html, #css, #node, #react{
+    height: 255px;
+}
+
+#git{
+    height: 400px;
+}
+.logo-inicio{
+    height: 90px;
+    width: 90px;
+    border-bottom: #f40373 1px solid;
+}
+.div-logo{
+    margin-top: 3%;
+}
+
+.bordaskills{
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    padding-top: 2%;
    
-   border-bottom: 1px solid rgb(255, 33, 107);
+}
+
+.bordaskills:hover{
+    border: 1px solid  rgb(255, 33, 107); 
+}
+
+.img-text-skills{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
 }
 .content-3 h1{
     text-shadow: 0 0 10px white, 0 0 10px black, 0 0 10px black;
@@ -174,92 +224,89 @@ footer{
     text-align: center;
     padding-top: 70px;
 }
-.logo-inicio{
-    height: 90px;
-    width: 90px;
-    margin-top: 45px;
-    border-bottom: #f40373 1px solid;
+.content-3{
+    height: 200vh;
+    width: 100vw;
+    background: rgb(44, 44, 43);
+   
+   border-bottom: 1px solid rgb(255, 33, 107);
 }
-.div-logo{
-    margin-top: -30px;
-}
-.content-central-3{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 10%;
-}
-.img-logo-skill{
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    margin-top: 15%;
+
+.container-skills{
+    width: 100vw;
+    height: 80%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 8% 3% 3% 3%;
+   
   
+
+    
+}
+
+video{
+    height: 400px;
+}
+.jobs-android{
+    display: flex;
+    gap: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    padding: 80px;
+    border-radius: 30px;
 }
 
 
 h3{
-    margin-bottom: 5px;
-    margin-left: 25%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 35px;
+    
+}
+p{ color: white;
+   padding-left: 2%;
+   padding-right: 2%;
+   padding-bottom: 1%;
+   
 }
 .container{
-    width: 50%;
-    background-color: #d2d7d3;
-    margin-left: 25%;
-    border-radius: 5px;
+    width: 20%;
+    background-color: #d2d7d334;
+  
+    border-radius: 50%;
     margin-bottom: 20px;
-    
-}
-.skills{
-    text-align: right;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    
+}
+
+.img-icon-skills{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+h3{
     color: white;
-border-radius: 5px;
-border: 1px solid black;
-}
-.html{
-    width: 90%;
-    background-color: #4caf50;
-    box-shadow: 0 0 20px #4caf50;
-
-}
-.css{
-    width: 80%;
-    background-color: #03a9f4;
-    box-shadow: 0 0 20px #03a9f4;
-    
 }
 
-.container-skills{
-    width: 60vw;
-    height:55vh;
+.conjunto-logo2{
+    margin-top: 3%;
 }
 
-.javascript{
-    width: 70%;
-    background-color: #8003f4;
-    box-shadow: 0 0 20px #8003f4;
-}
-.nodejs{
-    width: 30%;
-    background-color: #f49403;
-    box-shadow: 0 0 20px #f49403;
-}
-.react{
-    width: 20%;
-    background-color: #f40373;
-    box-shadow: 0 0 20px #f40373;
-    
-}
 .logo-redesocial, .icone-whats{
     height: 60px;
     width: 60px;
 }
 .conjunto-logo{
-    margin-bottom: 10%;
+   
     margin-left: -20%;
+    margin-bottom: 8%;
     
 }
 .logo-redesocial{
@@ -272,12 +319,7 @@ border: 1px solid black;
    
     
 }
-.git{
-    width: 70%;
-    background-color: #f4032b;
-    box-shadow: 0 0 20px #f4032b;
-    
-}
+
 .container-skills{
     margin-top: -4%;
 }
@@ -294,7 +336,7 @@ border: 1px solid black;
     justify-content: center;
     align-items: center;
     background: #03a9f4;
-  
+    border-radius: 15px;
     
 }
 .caixa-button{
@@ -310,6 +352,7 @@ border: 1px solid black;
 }
 .box:hover{
     z-index: 0;
+    border-radius: 10px;
 }
 .btnteste, .btnteste2{
     height: 30px;
@@ -383,6 +426,7 @@ border: 1px solid black;
    .jobs{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: solid 1px ;
    }
    .content-2-geral{
     height: 100%;
@@ -396,8 +440,11 @@ border: 1px solid black;
    }
 }
 @media (max-width:450px){
-.content-1, .headerr{
-    width: 350px;
+.content-1, .headerr, .content-3{
+    width: 450px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
     
 }
 .headerr{
@@ -406,13 +453,15 @@ border: 1px solid black;
 .content-1{
     display: flex;
     flex-direction: column;
-   padding-right: 60px;
-    height: 120vh;
-    padding-top: 150px;
+   padding-right: 10px;
+    height: 160vh;
+    padding-bottom: 130px;
+    
 }
 .intro{
     width: 200px;
     height: 600px;
+    margin-top: 200px;
     
 }
 .lista-menu{
@@ -437,5 +486,16 @@ border: 1px solid black;
 .logo-redesocial{
     width: 35px;
     height: 35px;
+}
+
+
+
+.content-2{
+    height: 230vh;
+    width: 450px;
+    
+}
+footer{
+    width: 450px;
 }
 }
